@@ -1,0 +1,41 @@
+{
+  "name": "webapp",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "start": "snowpack dev --reload",
+    "build": "snowpack build",
+    "test": "npx mocha -r esm spec/**/*.spec.js"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.14.5",
+    "@emotion/babel-preset-css-prop": "^11.2.0",
+    "@emotion/react": "^11.4.0",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@monaco-editor/react": "^4.2.1",
+    "@snowpack/plugin-babel": "^2.1.7",
+    "@snowpack/plugin-dotenv": "^2.1.0",
+    "@snowpack/plugin-react-refresh": "^2.5.0",
+    "big.js": "^6.1.1",
+    "bumbag": "^2.1.1",
+    "chai": "^4.3.4",
+    "chromedriver": "^91.0.1",
+    "clipboard-copy": "^4.0.1",
+    "date-fns": "^2.22.1",
+    "esm": "^3.2.25",
+    "lodash": "^4.17.20",
+    "mocha": "8.4.0",
+    "monaco-editor": "^0.25.2",
+    "playwright": "^1.12.3",
+    "prettier": "^2.3.2",
+    "ramda": "^0.27.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-dropzone": "^11.3.4",
+    "react-hook-form": "^7.10.1",
+    "react-router-dom": "^5.2.0",
+    "snowpack": "^3.7.1",
+    "swr": "^0.5.6"
+  }
+}

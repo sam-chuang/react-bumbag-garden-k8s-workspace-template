@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "workspaces": [
+    "webapp"
+  ],
+  "devDependencies": {
+    "husky": "^7.0.0"
+  },
+  "scripts": {
+    "prepare": "husky install"
+  }
+}
