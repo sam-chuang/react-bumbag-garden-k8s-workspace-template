@@ -1,16 +1,16 @@
-import { chromium } from "playwright";
-import { expect } from "chai";
+import { chromium } from "playwright"
+import { expect } from "chai"
 
-let page;
-let browser;
+let page
+let browser
 
 describe("Index page", () => {
+  /* TODO: local k8s env
   before(async () => {
     browser = await chromium.launch({ headless: false });
     page = await browser.newPage();
 
-    //TODO: repor url?
-    await page.goto("https://e2e-boilerplate.github.io/sandbox/", {
+    await page.goto("https://react-bumbag-template/", {
       waitUntil: "networkidle0",
     });
   });
@@ -28,4 +28,5 @@ describe("Index page", () => {
     expect(await page.title()).to.equal("Hi");
     expect(title).to.equal("Hi");
   });
-});
+  */
+})

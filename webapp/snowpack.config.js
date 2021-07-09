@@ -1,8 +1,10 @@
+//TODO: export build-date to env
 module.exports = {
   mount: {
     public: { url: "/", static: true },
     src: { url: "/dist" }
   },
+  env: {},
   plugins: [
     "@snowpack/plugin-babel",
     "@snowpack/plugin-react-refresh",

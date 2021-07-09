@@ -1,10 +1,17 @@
 {
-  "name": "webapp",
+  "name": "webapp-template",
   "private": true,
   "version": "0.1.0",
+  "config": {
+    "container": {
+      "registry": "container.registry.template"
+    }
+  },
   "scripts": {
     "start": "snowpack dev --reload",
     "build": "snowpack build",
+    "build:docker": "cross-var docker build . -t $npm_package_config_container_registry/$npm_package_name:$npm_package_version",
+    "push:docker": "cross-var docker push $npm_package_config_container_registry/$npm_package_name:$npm_package_version",
     "test": "npx mocha -r esm spec/**/*.spec.js"
   },
   "devDependencies": {
@@ -22,6 +29,7 @@
     "chai": "^4.3.4",
     "chromedriver": "^91.0.1",
     "clipboard-copy": "^4.0.1",
+    "cross-var": "^1.1.0",
     "date-fns": "^2.22.1",
     "esm": "^3.2.25",
     "lodash": "^4.17.20",

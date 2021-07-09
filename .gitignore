@@ -103,5 +103,11 @@ dist
 # TernJS port file
 .tern-port
 
+# Snowpack build
+build
+
 # husky
 .husky
+
+# playwright
+.playwright
