@@ -111,3 +111,6 @@ build
 
 # playwright
 .playwright
+
+# garden.io
+.garden

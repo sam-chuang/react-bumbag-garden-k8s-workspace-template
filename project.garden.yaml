@@ -1,0 +1,6 @@
+kind: Project
+name: react-bumbag-template
+environments:
+  - name: default # The name of the environment.
+providers:
+  - name: local-kubernetes # The name of the provider plugin to use.

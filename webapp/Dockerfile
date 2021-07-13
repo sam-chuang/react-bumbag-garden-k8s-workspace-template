@@ -1,4 +1,4 @@
-FROM node:14.17.3-stretch-slim AS build
+FROM node:16.4.2-stretch-slim AS build
 
 WORKDIR /dest
 

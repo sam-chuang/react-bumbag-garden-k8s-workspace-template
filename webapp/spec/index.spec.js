@@ -2,31 +2,35 @@ import { chromium } from "playwright"
 import { expect } from "chai"
 
 let page
+let context
 let browser
 
 describe("Index page", () => {
-  /* TODO: local k8s env
   before(async () => {
-    browser = await chromium.launch({ headless: false });
-    page = await browser.newPage();
+    browser = await chromium.launch({ headless: false })
+    context = await browser.newContext({})
+  })
 
-    await page.goto("https://react-bumbag-template/", {
-      waitUntil: "networkidle0",
-    });
-  });
+  beforeEach(async () => {
+    page = await context.newPage()
 
-  after(() => {
-    if (!page.isClosed()) {
-      browser.close();
-    }
-  });
+    await page.goto(`http://webapp.localhost`, {
+      waitUntil: "networkidle0"
+    })
+  })
+
+  afterEach(async () => {
+    await page.close()
+  })
+
+  after(async () => {
+    await browser.close()
+  })
 
   it("should say hi", async () => {
-    await page.waitForSelector("h1");
-    const title = await page.$eval("h1", (el) => el.textContent);
+    await page.waitForSelector("h1")
+    const title = await page.$eval("h1", (heading) => heading.textContent)
 
-    expect(await page.title()).to.equal("Hi");
-    expect(title).to.equal("Hi");
-  });
-  */
+    expect(title).to.equal("Hi")
+  })
 })
