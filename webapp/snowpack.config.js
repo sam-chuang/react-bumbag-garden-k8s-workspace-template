@@ -1,10 +1,18 @@
-//TODO: export build-date to env
+let isDev = process.env.NODE_ENV === "development" //node.js dev env
 module.exports = {
   mount: {
     public: { url: "/", static: true },
     src: { url: "/dist" }
   },
-  env: {},
+  env: {
+    VERSION: process.env.npm_package_version,
+    BUILD_DATE: new Date().toISOString(),
+    /* Caddy server template, refer to
+        https://caddyserver.com/docs/caddyfile/directives/templates
+        https://caddyserver.com/docs/modules/http.handlers.templates 
+    */
+    SERVER_ENV: isDev ? "" : '{{include "caddyserver_env.html"}}'
+  },
   plugins: [
     "@snowpack/plugin-babel",
     "@snowpack/plugin-react-refresh",

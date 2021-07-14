@@ -32,7 +32,7 @@
     "cross-var": "^1.1.0",
     "date-fns": "^2.22.1",
     "esm": "^3.2.25",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "mocha": "8.4.0",
     "monaco-editor": "^0.25.2",
     "playwright": "^1.12.3",
@@ -41,9 +41,9 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-dropzone": "^11.3.4",
-    "react-hook-form": "^7.10.1",
+    "react-hook-form": "^7.11.0",
     "react-router-dom": "^5.2.0",
-    "snowpack": "^3.7.1",
+    "snowpack": "^3.8.1",
     "swr": "^0.5.6"
   }
 }

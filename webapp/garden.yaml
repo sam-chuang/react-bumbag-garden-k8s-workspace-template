@@ -8,6 +8,8 @@ services:
       - hostname: webapp.localhost
         path: /
         port: http
+    env:
+      ENV: "local-kubernetes"
     ports:
       - name: http
         containerPort: 80
