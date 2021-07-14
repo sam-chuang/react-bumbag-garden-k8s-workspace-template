@@ -4,7 +4,7 @@ React, Bumbag, Emotion, React Hook Form, Playwright, Mocha, Chai, Snowpack etc..
 
 ## Project
 
-- Use [garden](https://garden.io/) to run to develop and deploy Kubernetes applications
+- Use [garden](https://garden.io/) to run and deploy Kubernetes applications
 
 ### Workspaces
 
