@@ -1,10 +1,20 @@
 import React, { useState } from "react"
-import ReactDOM from "react-dom"
 import { Global, css } from "@emotion/react"
-import { Card } from "bumbag"
+import { Box, Button } from "bumbag"
 
 export const App = () => {
-  return <h1>Hi</h1>
+  return (
+    <Box>
+      <span>Hi</span>
+      <Button
+        css={css`
+          color: blueviolet;
+        `}
+      >
+        Butt
+      </Button>
+    </Box>
+  )
 }
 
 export default App

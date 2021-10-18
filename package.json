@@ -4,7 +4,7 @@
     "webapp"
   ],
   "devDependencies": {
-    "husky": "^7.0.1"
+    "husky": "^7.0.2"
   },
   "scripts": {
     "test": "npm run test --workspaces",
